@@ -24,6 +24,8 @@
             <li><a href="#space-between-methods">Расстояние между методами</a></li>
             <li><a href="#brackets">Фигурные скобки</a></li>
             <li><a href="#for-if">Условия и циклы</a></li>
+            <li><a href="#interface-names">Имена интерфейсов</a></li>
+            <li><a href="#access-modifiers">Модификаторы доступа</a></li>
         </ul>
     </div>
     <div class="main">
@@ -38,7 +40,7 @@
             </div>
 
             <div class="rule-body">
-                <p>
+                <p class="description">
                     Если в коде есть неиспользуемые using (обычно студия подсвечивает их серым) нещадно их удаляйте. Они нам не нужны.
                 </p>
                 <h4 class="wrong">Неправильно:</h4>
@@ -56,7 +58,7 @@
             </div>
 
             <div class="rule-body">
-                <p>
+                <p class="description">
                     Не оставляйте закоментированный код. И уж точно без особой необходимости не заливайте его в систему контроля версий.
                     <br/>Если код вам не нужен - удаляйте его. Оставлять его на всякий случай не надо.
                 </p>
@@ -73,9 +75,8 @@
             </div>
 
             <div class="rule-body">
-                <p>
-                    Имя метода всегда начинается с большой буквы. И каждое последующее слово в имени метода с большой буквы.
-                    <br/>Такой стиль написания называется <strong>PascalCase</strong>
+                <p class="description">
+                    Имя метода всегда начинается с большой буквы. И каждое последующее слово в имени метода с большой буквы. Такой стиль написания называется <strong>PascalCase</strong>
                 </p>
                 <h4 class="wrong">Неправильно:</h4>
                 <img src="images/method-names-wrong.png" style="width: 55%;" />
@@ -90,9 +91,8 @@
             </div>
 
             <div class="rule-body">
-                <p>
-                    Имена параметров метода начинаются с маленькой буквы. Каждое последующее слово в имени метода с большой.
-                    <br/>Такой стиль написания называется <strong>camelCase</strong>
+                <p class="description">
+                    Имена параметров метода начинаются с маленькой буквы. Каждое последующее слово в имени метода с большой. Такой стиль написания называется <strong>camelCase</strong>
                 </p>
                 <h4 class="wrong">Неправильно:</h4>
                 <img src="images/param-names-wrong.png" style="width: 45%;" />
@@ -107,7 +107,7 @@
             </div>
 
             <div class="rule-body">
-                <p>
+                <p class="description">
                     Локальные переменные так же как и параметры метода пишутся с маленькой буквы в camelCase.
                 </p>
                 <h4 class="wrong">Неправильно:</h4>
@@ -123,7 +123,7 @@
             </div>
 
             <div class="rule-body">
-                <p>
+                <p class="description">
                     Если метод возвращает значение - то перед return всегда оставляй пустую строку
                 </p>
                 <h4 class="wrong">Неправильно:</h4>
@@ -144,7 +144,7 @@
             </div>
 
             <div class="rule-body">
-                <p>
+                <p class="description">
                     Между методами оставляй только одну пустую строку. Не больше и не меньше.
                 </p>
                 <h4 class="wrong">Неправильно:</h4>
@@ -160,9 +160,8 @@
             </div>
 
             <div class="rule-body">
-                <p>
-                    Между открывающимися/закрывающимися скобками пустые строки оставлять не нужно. Так же придерживайтесь правильной табуляции.
-                    <br/> Каждая последующая открывающаяся скобка располагается на одну табуляцию правее, а закрывающаяся - левее.
+                <p class="description">
+                    Между открывающимися/закрывающимися скобками пустые строки оставлять не нужно. Так же придерживайтесь правильной табуляции. Каждая последующая открывающаяся скобка располагается на одну табуляцию правее, а закрывающаяся - левее.
                 </p>
                 <h4 class="wrong">Неправильно:</h4>
                 <img src="images/brackets-wrong.png" style="width: 45%;" />
@@ -177,7 +176,7 @@
             </div>
 
             <div class="rule-body">
-                <p>
+                <p class="description">
                     Условия и циклы отделяйте от остального кода пустыми строками
                 </p>
                 <h4 class="wrong">Неправильно:</h4>
@@ -186,13 +185,41 @@
                 <img src="images/for-if-correct.png" style="width: 40%;" />
             </div>
 
+            <br/><br/>
 
+            <div class="rule-header">
+                <a name="interface-names">10. Имена интерфейсов</a>
+            </div>
 
+            <div class="rule-body">
+                <p class="description">
+                    Всегда используйте префикс "I" в именах интерфейсов - IUserService, ICustomerRepository
+                </p>
+                <h4 class="wrong">Неправильно:</h4>
+                <img src="images/interface-name-wrong.png" style="width: 40%;" />
+                <h4 class="correct">Правильно:</h4>
+                <img src="images/interface-name-correct.png" style="width: 40%;" />
+            </div>
+
+            <br/><br/>
+
+            <div class="rule-header">
+                <a name="access-modifiers">11. Модификаторы доступа</a>
+            </div>
+
+            <div class="rule-body">
+                <p class="description">
+                    Всегда используйте модификаторы доступа даже в том случае, когда вам требуется значение по умолчанию.
+                </p>
+                <h4 class="wrong">Неправильно:</h4>
+                <img src="images/access-modifiers-wrong.png" style="width: 40%;" />
+                <h4 class="correct">Правильно:</h4>
+                <img src="images/access-modifiers-correct.png" style="width: 40%;" />
+            </div>
 
         </div>
 
     </div>
-
 </body>
 
 </html>
