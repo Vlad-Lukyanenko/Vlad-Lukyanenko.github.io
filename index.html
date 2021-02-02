@@ -20,12 +20,15 @@
             <li><a href="#method-names">Имена методов</a></li>
             <li><a href="#method-param-names">Имена параметров метода</a></li>
             <li><a href="#local-vars">Локальные переменные</a></li>
+            <li><a href="#underscore-vars">Подчеркивания в именах переменных</a></li>
             <li><a href="#return-statement">Оператор <strong>return</strong></a></li>
             <li><a href="#space-between-methods">Расстояние между методами</a></li>
             <li><a href="#brackets">Фигурные скобки</a></li>
             <li><a href="#for-if">Условия и циклы</a></li>
             <li><a href="#interface-names">Имена интерфейсов</a></li>
             <li><a href="#access-modifiers">Модификаторы доступа</a></li>
+            <li><a href="#classes-structs-interfaces">Классы структуры и интерфейсы</a></li>
+            <li><a href="#bool-type">Булевые методы и переменные</a></li>
         </ul>
     </div>
     <div class="main">
@@ -36,7 +39,7 @@
 
         <div class="inner-content">
             <div class="rule-header">
-                <a name="using-statement">1. Неиспользуемые <strong>using</strong></a>
+                <a name="using-statement">Неиспользуемые <strong>using</strong></a>
             </div>
 
             <div class="rule-body">
@@ -54,7 +57,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="comments">2. Комментарии</a>
+                <a name="comments">Комментарии</a>
             </div>
 
             <div class="rule-body">
@@ -71,7 +74,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="method-names">3. Имена методов</a>
+                <a name="method-names">Имена методов</a>
             </div>
 
             <div class="rule-body">
@@ -87,7 +90,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="method-param-names">4. Имена параметров метода</a>
+                <a name="method-param-names">Имена параметров метода</a>
             </div>
 
             <div class="rule-body">
@@ -103,7 +106,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="local-vars">5. Локальные переменные</a>
+                <a name="local-vars">Локальные переменные</a>
             </div>
 
             <div class="rule-body">
@@ -119,7 +122,27 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="return-statement">6. Оператор <strong>return</strong></a>
+                <a name="underscore-vars">Подчеркивания в именах переменных</a>
+            </div>
+
+            <div class="rule-body">
+                <p class="description">
+                    Не используйте подчеркивания в именах переменных. Исключением являются подчеркивания в начале приватных переменных.
+                </p>
+                <h4 class="wrong">Неправильно:</h4>
+                <img src="images/var-names-wrong.png" style="width: 45%;" />
+                <h4 class="correct">Правильно:</h4>
+                <img src="images/var-names-correct.png" style="width: 45%;" />
+                <h4 class="exception">Исключения:</h4>
+                <img src="images/var-names-exception.png" style="width: 45%;" />
+            </div>
+
+
+
+            <br/><br/>
+
+            <div class="rule-header">
+                <a name="return-statement">Оператор <strong>return</strong></a>
             </div>
 
             <div class="rule-body">
@@ -140,7 +163,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="space-between-methods">7. Расстояние между методами</a>
+                <a name="space-between-methods">Расстояние между методами</a>
             </div>
 
             <div class="rule-body">
@@ -156,7 +179,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="brackets">8. Фигурные скобки</a>
+                <a name="brackets">Фигурные скобки</a>
             </div>
 
             <div class="rule-body">
@@ -172,7 +195,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="for-if">9. Условия и циклы</a>
+                <a name="for-if">Условия и циклы</a>
             </div>
 
             <div class="rule-body">
@@ -188,7 +211,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="interface-names">10. Имена интерфейсов</a>
+                <a name="interface-names">Имена интерфейсов</a>
             </div>
 
             <div class="rule-body">
@@ -204,7 +227,7 @@
             <br/><br/>
 
             <div class="rule-header">
-                <a name="access-modifiers">11. Модификаторы доступа</a>
+                <a name="access-modifiers">Модификаторы доступа</a>
             </div>
 
             <div class="rule-body">
@@ -217,6 +240,36 @@
                 <img src="images/access-modifiers-correct.png" style="width: 40%;" />
             </div>
 
+            <br/><br/>
+
+            <div class="rule-header">
+                <a name="classes-structs-interfaces">Классы, структуры и интерфейсы</a>
+            </div>
+
+            <div class="rule-body">
+                <p class="description">
+                    Когда вы создаете класс, структуру или интерфейс выделяйте для каждого отдельный файл с соотвенствующим названием. Не нужно создавать несколько классов или структур в одном файле. Исключения конечно встречаются, но для простоты понимания кода лучше разбивать
+                    все по отдельным файлам.
+                </p>
+                <h4 class="wrong">Неправильно:</h4>
+                <img src="images/classes-structs-interfaces-wrong.png" style="width: 40%;" />
+            </div>
+
+            <br/><br/>
+
+            <div class="rule-header">
+                <a name="classes-structs-interfaces">Булевые методы и переменные</a>
+            </div>
+
+            <div class="rule-body">
+                <p class="description">
+                    При создании булевых переменных и методом используйте префиксы Any, Is, Have и другие подобные ключевые слова.
+                </p>
+                <h4 class="wrong">Неправильно:</h4>
+                <img src="images/bool-method-wrong.png" style="width: 50%;" />
+                <h4 class="correct">Правильно:</h4>
+                <img src="images/bool-method-correct.png" style="width: 50%;" />
+            </div>
         </div>
 
     </div>
